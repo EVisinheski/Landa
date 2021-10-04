@@ -67,7 +67,7 @@ a.linkum:link {
 a.linkum:hover {
 	color: #FF0000;
 }
- @media (max-width: 700px) {
+ @media (max-width: 600px) {
 .row {
 	flex-direction: column;
 }

@@ -222,7 +222,7 @@
   #cssmenu {
     width: 100%;
   }
-  #cssmenu ul {
+  #cssmenu ul:not(:first-child) {
     width: 100%;
     display: none;
   }
