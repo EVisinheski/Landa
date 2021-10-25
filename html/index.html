@@ -15,23 +15,28 @@
 </head>
 <body onload="loaderTimeOut()">
 <div id="loader"></div>
-<div style = "display:none" class="menu animate-bottom" id="respNav">
-  <a href='index.html'class="active box"><img src="../images/landa.png" alt="Landa WorldWide"></a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
-    <i class="fa fa-bars"></i>
-  </a>
+<div style = "display:none" class = "menu animate-bottom" id="respNav">
+    <a href='index.html' ><img src="../images/landa.png" alt="Landa WorldWide"></a>
 </div>
 
 <div id="divs" class="animate-bottom">
-    <img src="../images/backimagecopy.jpg" alt="Landa WorldWide">
+  
+  <div class="boxlogo">
+    <div class="white"></div>
+    <div class="grey"></div>
+    <div class="darkgrey"></div>
+  </div>
+  
+  <div class = "textcenter">
+  
+  
     <h2>LANDA COMING SOON</h2>
+
     <form name = "frmEmail" action="../php/index.php" method="post">
         <input autocomplete = "email" type="text" name="email" id="email" placeholder="email@domain.com">
         <input type="submit" name="submit" value="subscribe" class="subscribe" onclick="emailValidation(document.frmEmail.email)"/>
-    </form>
+      </form>
+  </div>
 </div>
 </body>
 </html>
