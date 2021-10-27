@@ -14,7 +14,7 @@ displayPage = function() {
 
 loaderTimeOut = function(){
     var timeOut;
-    timeOut = setTimeout(displayPage, 1500);//calls showPage functions after 1.5 seconds
+    timeOut = setTimeout(displayPage, 0);//calls showPage functions after 1.5 seconds
 }
     
 

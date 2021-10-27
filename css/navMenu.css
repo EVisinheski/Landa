@@ -27,8 +27,14 @@ body {
   float: center;
   display: block; 
   text-align: center;
-  padding: 14px;
-  width:100%;
+  padding: 2%;
+}
+
+.menu a img{
+  /*Menu text and boxing but does not include the first child */
+  width:auto;
+ height:auto;
+ display:block;
 }
 
 #divs {
@@ -37,21 +43,22 @@ body {
 }
 
 div{
-  min-height:100%;
-}
-.boxlogo{
-  width:100%;
-  text-align:center;
-  padding-top: 7%;
-  padding-bottom:7%;
+  border: 1px solid red;
 }
 
-.boxlogo .white {
+.outerbox {
+	width:100%;
+	text-align: center;
+	padding-top:7%;
+	padding-bottom:7%;
+}
 
-  background-image: url(../images/backimagecopy.jpg);
+.white {
+
+  background-image: url(../images/landaman.jpg);
   background-color: rgb(240, 240, 240);
   background-blend-mode: darken;
-  border-radius: 100px;
+  border-radius: 45%;
   animation: boxlogowhitecycle 5s infinite;
   -webkit-animation: boxlogowhitecycle 5s infinite;
   width: 25%;
@@ -59,15 +66,16 @@ div{
   background-repeat: no-repeat;
   display: inline-block;
   background-size: 100%;
+  margin:2%;
 
 }
 
-.boxlogo .grey {
+.grey {
 
-  background-image: url(../images/backimagecopy.jpg);
+  background-image: url(../images/landaman.jpg);
   background-color: rgb(210, 210, 210);
   background-blend-mode: darken;
-  border-radius: 100px;
+  border-radius: 45%;
   animation: boxlogogreycycle 5s infinite; 
   -webkit-animation: boxlogogreycycle 5s infinite;
   width: 25%;
@@ -75,14 +83,15 @@ div{
   background-repeat: no-repeat;
   display: inline-block;
   background-size: 100%;
+  margin:2%;
 
 }
-.boxlogo .darkgrey {
+.darkgrey {
 
-  background-image: url(../images/backimagecopy.jpg);
+  background-image: url(../images/landaman.jpg);
   background-color: rgb(175, 175, 175);
   background-blend-mode: darken;
-  border-radius: 100px;
+  border-radius: 45%;
   animation: boxlogodarkgreycycle 5s infinite;
   -webkit-animation: boxlogodarkgreycycle 5s infinite;
   width: 25%;
@@ -90,11 +99,54 @@ div{
   background-repeat: no-repeat;
   display: inline-block;
   background-size: 100%;
+  margin:2%;
 }
 
 .textcenter{
   text-align: center;
 }
+
+
+
+@media only screen and (max-width: 767px){
+  .white {
+    background-image: url(../images/landaman.jpg);
+    background-color: rgb(240, 240, 240);
+    background-blend-mode: darken;
+    border-radius: 45%;
+    animation: boxlogowhitecycle 5s infinite;
+    -webkit-animation: boxlogowhitecycle 5s infinite;
+    width: 75%;
+    padding-bottom: 61%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-size: 100%;
+  
+  }
+  .grey {
+    display:none;
+  
+  }
+  .darkgrey {
+    display:none;
+  }
+
+  .menu {
+		/*Adds the background colour for the top Menu*/
+		overflow: hidden;
+		background-color: rgb(255, 255, 255);
+	}
+	.menu a {
+		/*Menu text and boxing but does not include the first child */
+		float: center;
+		display: block;
+		text-align: center;
+		padding: 2%;
+		width: 100%;
+	}
+
+}
+
 
 .animate-bottom {
   position: relative;
