@@ -16,28 +16,36 @@
   <title>LANDA</title>
 </head>
 
-<body onload="loaderTimeOut()">
+<body onload="loaderTimeOut()"></body>
   <div id="loader"></div>
   <div style="display:none" class="menu animate-bottom" id="respNav">
-    <a href='index.html'><img src="images/landa.png" alt="Landa WorldWide"></a>
+    <link href='index.html'> 
+    <div id = "logoimage"></div>
   </div>
 
+
+
+<article id = "divs" class="animate-bottom">
+  
   <section class="outerbox">
     <div class="white"></div></div>
     <div class="grey"></div>
     <div class="darkgrey"></div>
   </section>
 
+
+
   <div class="textcenter">
     <h2>LANDA COMING SOON</h2>
-
     <form name="frmEmail" action="php/index.php" method="post">
       <input autocomplete="email" type="text" name="email" id="email" placeholder="email@domain.com">
       <input type="submit" name="submit" value="subscribe" class="subscribe"
-        onclick="emailValidation(document.frmEmail.email)" />
+      onclick="emailValidation(document.frmEmail.email)" />
     </form>
   </div>
-  </div>
+
+  
+</article>
 </body>
 
 </html>

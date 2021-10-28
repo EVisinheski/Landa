@@ -18,24 +18,21 @@ body {
 
 .menu {
   /*Adds the background colour for the top Menu*/
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-}
-
-.menu a{
-  /*Menu text and boxing but does not include the first child */
-  float: center;
-  display: block; 
+  width:100%;
+  margin:0px;
+  padding:0px;
   text-align: center;
-  padding: 2%;
 }
 
-.menu a img{
-  /*Menu text and boxing but does not include the first child */
-  width:auto;
- height:auto;
- display:block;
+ #logoimage{
+  background-image: url(../images/landa.png);
+  height: 50px;
+  width:100px;
+  margin: 1px;
+  padding:0px;
+  display:inline-block;
 }
+
 
 #divs {
   /*Used to not display divs during the loading screen*/
@@ -46,8 +43,16 @@ div{
   border: 1px solid red;
 }
 
+article{
+  border: 1px solid green;
+}
+
+section{
+  border: 1px solid blue;
+}
+
 .outerbox {
-	width:100%;
+  width:100%;
 	text-align: center;
 	padding-top:7%;
 	padding-bottom:7%;
@@ -108,7 +113,7 @@ div{
 
 
 
-@media only screen and (max-width: 767px){
+@media only screen and (max-width: 600px){
   .white {
     background-image: url(../images/landaman.jpg);
     background-color: rgb(240, 240, 240);
@@ -131,20 +136,14 @@ div{
     display:none;
   }
 
-  .menu {
-		/*Adds the background colour for the top Menu*/
-		overflow: hidden;
-		background-color: rgb(255, 255, 255);
-	}
-	.menu a {
-		/*Menu text and boxing but does not include the first child */
-		float: center;
-		display: block;
-		text-align: center;
-		padding: 2%;
-		width: 100%;
-	}
-
+  #logoimage{
+    background-image: url(../images/smalllanda.png);
+    height: 25px;
+    width:50px;
+    margin: 1px;
+    padding:0px;
+    display:inline-block;
+  }
 }
 
 

@@ -10,6 +10,7 @@ displayPage = function() {
     document.getElementById("loader").style.display = "none";// removes the laoder.gif from the screen
     document.getElementById("respNav").style.display = "block";//reverts the display block and reveals divs
     document.getElementById("divs").style.display = "block";
+    
 }
 
 loaderTimeOut = function(){
