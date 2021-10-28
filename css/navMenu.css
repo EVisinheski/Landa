@@ -18,6 +18,7 @@ body {
 
 .menu {
   /*Adds the background colour for the top Menu*/
+  background-color: rgba(240,240,240);
   width:100%;
   margin:0px;
   padding:0px;
@@ -28,7 +29,7 @@ body {
   background-image: url(../images/landa.png);
   height: 50px;
   width:100px;
-  margin: 1px;
+  margin: 10px;
   padding:0px;
   display:inline-block;
 }
@@ -40,15 +41,15 @@ body {
 }
 
 div{
-  border: 1px solid red;
+  border: 0px solid red;
 }
 
 article{
-  border: 1px solid green;
+  border: 0px solid green;
 }
 
 section{
-  border: 1px solid blue;
+  border: 0px solid blue;
 }
 
 .outerbox {
@@ -135,7 +136,8 @@ section{
   .darkgrey {
     display:none;
   }
-
+}
+@media only screen and (max-width: 450px){
   #logoimage{
     background-image: url(../images/smalllanda.png);
     height: 25px;
